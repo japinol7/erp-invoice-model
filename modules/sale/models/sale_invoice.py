@@ -1,16 +1,16 @@
 """Module sale_invoice.
 Implements the model sale_invoice.
 Depends on:
-  - modules.account.models.account_invoice
-  - modules.contacts.models.contact
-  - modules.product.models.product
+  - modules.account
+  - modules.contacts
 """
 
 __author__ = 'Joan A. Pinol  (japinol)'
 
 
-from modules.account.models.account_invoice import AccountInvoice, AccountInvoiceLine
+from modules.account.models.account_invoice import AccountInvoice
 from modules.account.models.account_invoice import AccountInvoiceType, AccountInvoiceException
+from modules.sale.models.sale_invoice_line import SaleInvoiceLine
 
 
 class SaleInvoice(AccountInvoice):
@@ -44,10 +44,3 @@ class SaleInvoice(AccountInvoice):
         else:
             self.lines.append(SaleInvoiceLine(self.id, product, qty))
         self._compute_amount()
-
-
-class SaleInvoiceLine(AccountInvoiceLine):
-    """Represents a sale invoice's line."""
-
-    def __init__(self, invoice_id, product, qty):
-        super().__init__(invoice_id, product, qty)

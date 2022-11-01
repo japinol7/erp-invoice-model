@@ -7,3 +7,4 @@ Author: 'Joan A. Pinol  (japinol)'
 __author__ = 'Joan A. Pinol  (japinol)'
 
 from modules.account.models import account_invoice
+from modules.account.models import account_invoice_line
