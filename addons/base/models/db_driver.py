@@ -5,12 +5,7 @@ Author: 'Joan A. Pinol  (japinol)'
 Depends on:
 """
 
-import logging
-
-
-logging.basicConfig(format='%(asctime)s %(levelname)s %(name)s: %(message)s')
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+from tools.logger.logger import log as logger
 
 
 class DBDriver:

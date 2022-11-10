@@ -1,0 +1,61 @@
+2022-11-10 21:49:29.981 | INFO | Start app erp-invoice-model version: 0.0.1
+2022-11-10 21:49:29.981 | INFO | Connecting database dummy_db.
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoice: id -> 1A
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoice: invoice_type -> 
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoice: company_name -> Company_assignment
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoice: company_email -> info@company_assignment.com
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoice: company_vat -> 89735694-U
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoice: client_name -> Cool Beverage Company SL
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoice: client_email -> billing@coolbeveragecompany.com
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoice: client_vat -> 27956677-I
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoice: amount_total -> 53.020
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoice: lines -> [Soda             10.02  x  1, Beer             20.00  x  2, Water 1L          3.00  x  1]
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoice: is_cancelled -> False
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoice: is_paid -> False
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoice: is_validated -> False
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoice: is_sent -> False
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: invoice_id -> 1A
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: product_name -> Soda
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: price -> 10.020
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: qty -> 1
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: product_desc -> 
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: invoice_id -> 1A
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: product_name -> Beer
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: price -> 20.000
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: qty -> 2
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: product_desc -> A middle quality beer
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: invoice_id -> 1A
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: product_name -> Water 1L
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: price -> 3.000
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: qty -> 1
+2022-11-10 21:49:29.995 | INFO | Writing field to db table AccountInvoiceLine: product_desc -> 
+2022-11-10 21:49:29.995 | INFO | Connecting database dummy_db.
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoice: id -> INV/OUT/1A
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoice: invoice_type -> out
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoice: company_name -> Company_assignment
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoice: company_email -> info@company_assignment.com
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoice: company_vat -> 89735694-U
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoice: client_name -> Cool Beverage Company SL
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoice: client_email -> billing@coolbeveragecompany.com
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoice: client_vat -> 27956677-I
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoice: amount_total -> 53.020
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoice: lines -> [Soda             10.02  x  1, Beer             20.00  x  2, Water 1L          3.00  x  1]
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoice: is_cancelled -> False
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoice: is_paid -> False
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoice: is_validated -> False
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoice: is_sent -> False
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: invoice_id -> INV/OUT/1A
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: product_name -> Soda
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: price -> 10.020
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: qty -> 1
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: product_desc -> 
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: invoice_id -> INV/OUT/1A
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: product_name -> Beer
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: price -> 20.000
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: qty -> 2
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: product_desc -> A middle quality beer
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: invoice_id -> INV/OUT/1A
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: product_name -> Water 1L
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: price -> 3.000
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: qty -> 1
+2022-11-10 21:49:29.995 | INFO | Writing field to db table SaleInvoiceLine: product_desc -> 

@@ -10,16 +10,12 @@ Depends on:
 __author__ = 'Joan A. Pinol  (japinol)'
 
 from decimal import Decimal
-import logging
 
+from tools.logger.logger import log as logger
 from addons.base.models.db_driver import db_driver
 
 # Decimal digits for intermediate calculation operations
 DECIMALS_CALC = 3
-
-logging.basicConfig(format='%(asctime)s %(levelname)s %(name)s: %(message)s')
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
 
 
 class AccountInvoiceLine:
