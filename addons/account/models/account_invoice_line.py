@@ -7,7 +7,7 @@ Depends on:
   - modules.base.models.db_driver
 """
 
-__author__ = 'Joan A. Pinol  (japinol)'
+__author__ = "Joan A. Pinol  (japinol)"
 
 from decimal import Decimal
 
@@ -61,11 +61,12 @@ class AccountInvoiceLine:
 
     def write_to_db(self):
         """Writes the current fields to the database."""
-        vals = {'invoice_id': self.invoice_id,
-                'product_name': self.product_name,
-                'price': self.price,
-                'qty': self.qty,
-                'product_desc': self.product_desc
-                }
+        vals = {
+            "invoice_id": self.invoice_id,
+            "product_name": self.product_name,
+            "price": self.price,
+            "qty": self.qty,
+            "product_desc": self.product_desc,
+        }
 
         db_driver.write(self.__class__.__name__, vals)

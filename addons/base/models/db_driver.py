@@ -12,7 +12,7 @@ class DBDriver:
     """Represents a database driver."""
 
     def __init__(self):
-        self.name = 'dummy_db'
+        self.name = "dummy_db"
 
         self.connect()
 

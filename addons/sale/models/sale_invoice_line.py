@@ -5,7 +5,7 @@ Depends on:
   - modules.product
 """
 
-__author__ = 'Joan A. Pinol  (japinol)'
+__author__ = "Joan A. Pinol  (japinol)"
 
 
 from addons.account.models.account_invoice_line import AccountInvoiceLine

@@ -5,24 +5,27 @@ Depends on:
   - modules.contacts
 """
 
-__author__ = 'Joan A. Pinol  (japinol)'
+__author__ = "Joan A. Pinol  (japinol)"
 
 
 from addons.account.models.account_invoice import AccountInvoice
-from addons.account.models.account_invoice import AccountInvoiceType, AccountInvoiceException
+from addons.account.models.account_invoice import (
+    AccountInvoiceType,
+    AccountInvoiceException,
+)
 from addons.sale.models.sale_invoice_line import SaleInvoiceLine
 
 
 class SaleInvoice(AccountInvoice):
     """Represents a sale invoice.
-       - field products_qty: A sequence with a sequence of products and their quantities.
-           It is used to create the invoice lines when a new invoice is created.
-           ex: 2 sodas and 3 beers: ((product_soda, 2), (product_beer, 3))
+    - field products_qty: A sequence with a sequence of products and their quantities.
+        It is used to create the invoice lines when a new invoice is created.
+        ex: 2 sodas and 3 beers: ((product_soda, 2), (product_beer, 3))
     """
 
     def __init__(self, invoice_id, company, client, products_qty):
         # Out invoices, i.e., sale invoices will have the prefix 'INV/OUT/' in their id
-        invoice_id = 'INV/OUT/' + str(invoice_id)
+        invoice_id = "INV/OUT/" + str(invoice_id)
         super().__init__(invoice_id, company, client, products_qty)
         self.invoice_type = AccountInvoiceType.OUT
 
@@ -33,9 +36,13 @@ class SaleInvoice(AccountInvoice):
         """
         # Validates that the line can be added
         if self.is_validated:
-            raise AccountInvoiceException(f"Error! You cannot add a line to a validated invoice!: {self.id}")
+            raise AccountInvoiceException(
+                f"Error! You cannot add a line to a validated invoice!: {self.id}"
+            )
         elif self.is_cancelled:
-            raise AccountInvoiceException(f"Error! You cannot add a line to a cancelled invoice!: {self.id}")
+            raise AccountInvoiceException(
+                f"Error! You cannot add a line to a cancelled invoice!: {self.id}"
+            )
 
         for line in self.lines:
             if line.product == product:

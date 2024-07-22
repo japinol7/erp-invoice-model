@@ -9,5 +9,5 @@ class Product:
 
     def __init__(self, name, price, description=None):
         self.name = name
-        self.description = description or ''
+        self.description = description or ""
         self.price = price

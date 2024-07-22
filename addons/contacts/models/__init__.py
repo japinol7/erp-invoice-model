@@ -4,6 +4,6 @@ Author: 'Joan A. Pinol  (japinol)'
 This package includes models for the contacts module.
 """
 
-__author__ = 'Joan A. Pinol  (japinol)'
+__author__ = "Joan A. Pinol  (japinol)"
 
 from addons.contacts.models import contact
