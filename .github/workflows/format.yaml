@@ -27,3 +27,6 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: '[REF] Code formatted with Ruff'
+      - name: Test with unittest
+        run: |
+          python -m unittest
