@@ -1,29 +1,13 @@
 ## Very Basic Invoice Model Example
 
 	program: Very Basic Invoice Model Example.
-	version: 0.0.1
+	version: 0.0.2
 	author: Joan A. Pinol
 	author_nickname: japinol
 	author_gitHub: japinol7
 	author_twitter: @japinol
 	description: Very Basic Invoice Model example.
-	Python requires: 3.8 or greater.
-	Python versions tested: 
-        > 3.8.5   64bits under Windows 10
-        > 3.9.12  64bits under Windows 11
-
-
-**How to test the implementation**
-
-	Do this:
-	    1. Clone this repository in your local system.
-	    2. Go to its folder in your system.
-	    3. $ python -m unittest
-
-    This should result in some logs and it should end this way:
-	    …
-        Ran 18 tests in 0.005s
-        OK
+	Python requires: 3.12 or greater.
 
 
 **Requirements**
@@ -44,12 +28,15 @@
     • I decided to structure the project in five main addons (module-packages): 
           base, account, contacts, product and sale.
     • Each addon (module-package) will have two packages: models and tests.
-    • The account addon will implement the classes AccountInvoice and AccountInvoiceLine.
-    • The base addon will create a dummy class DBDriver to connect and write to a fictional database.
+    • The account addon will implement the classes AccountInvoice 
+      and AccountInvoiceLine.
+    • The base addon will create a dummy class DBDriver to connect and 
+      write to a fictional database.
     • The sale addon will implement the classes SaleInvoice and SaleInvoiceLine.
-    • They will be subclasses of AccountInvoice and AccountInvoiceLine from the account addon.
-    • The main tests are in the main account addon, inside test_account_invoice.py 
-      and the sale addon, in test_sale_invoice.py
+    • They will be subclasses of AccountInvoice and AccountInvoiceLine 
+      from the account addon.
+    • The main tests are in the main account addon, inside 
+      test_account_invoice.py and the sale addon, in test_sale_invoice.py
 
 
 **In more detail**
@@ -59,16 +46,17 @@
         • models
             • account_invoice.py
               Implements the model account_invoice.
-              Classes: AccountInvoice, AccountInvoiceType and AccountInvoiceException.
+              Classes: AccountInvoice, AccountInvoiceType 
+              and AccountInvoiceException.
               It’s not intended to be used directly. 
-              Instead, its classes are intended to be used through the subclass sale addon 
-              (and a future purchase addon).
+              Instead, its classes are intended to be used through the subclass 
+              sale addon (and a future purchase addon).
             • account_invoice_line.py
               Implements the model account_invoice_line.
               Classes: AccountInvoiceLine.
               It’s not intended to be used directly. 
-              Instead, its classes are intended to be used through the subclass sale addon 
-              (and a future purchase addon).
+              Instead, its classes are intended to be used through the subclass 
+              sale addon (and a future purchase addon).
         • tests
             • test_account_invoice.py
               Here are the main tests for all the functionality of the invoices.
@@ -94,13 +82,30 @@
             • sale_invoice.py
               Implements the model sale_invoice.
               Classes: SaleInvoice.
-              These classes inherit AccountInvoice and AccountInvoiceLine from the account addon.
-              SaleInvoice puts the attribute invoice_type to AccountInvoiceType.OUT 
-              and adds the string 'INV/OUT/' to the field invoice_id.
+              These classes inherit AccountInvoice and AccountInvoiceLine 
+              from the account addon.
+              SaleInvoice puts the attribute invoice_type 
+              to AccountInvoiceType.OUT and adds the string 'INV/OUT/' 
+              to the field invoice_id.
             • sale_invoice_line.py
               Implements the model sale_invoice_line.
               Classes: SaleInvoiceLine .
         • tests
             • test_sale_invoice.py
-              This addon adds some tests for the characteristics added to sale invoices.
-              Although, the main tests for invoices are in the file: test_account_invoice.py.
+              This addon adds some tests for the characteristics 
+              added to sale invoices.
+              Although, the main tests for invoices are in 
+              the file: test_account_invoice.py.
+
+
+**How to test the implementation**
+
+	Do this:
+	 1. Clone this repository in your local system.
+	 2. Go to its folder in your system.
+	 3. $ python -m unittest
+
+    This should result in some logs and it should end this way:
+	 …
+     Ran 18 tests in 0.005s
+     OK
