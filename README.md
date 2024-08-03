@@ -20,7 +20,7 @@
             • The company information.
         • Simulate storing this information into a database.
     2. Write unit tests using unittest to test the implementation.
-    3. The implementation will use Python 3.8.
+    3. The implementation will use Python 3.12.
 
 
 **Analysis**
