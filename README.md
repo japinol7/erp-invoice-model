@@ -1,13 +1,13 @@
 ## Very Basic Invoice Model Example
 
 	program: Very Basic Invoice Model Example.
-	version: 0.0.2
+	version: 0.0.3
 	author: Joan A. Pinol
 	author_nickname: japinol
 	author_gitHub: japinol7
 	author_twitter: @japinol
 	description: Very Basic Invoice Model example.
-	Python requires: 3.12 or greater.
+	Python requires: 3.13 or greater.
 
 
 **Requirements**
