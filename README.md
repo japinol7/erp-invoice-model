@@ -7,7 +7,7 @@
 	author_gitHub: japinol7
 	author_twitter: @japinol
 	description: Very Basic Invoice Model example.
-	Python requires: 3.13 or greater.
+	Python requires: 3.15 or greater.
 
 
 **Requirements**
@@ -106,5 +106,5 @@
 
     This should result in some logs and it should end this way:
 	 …
-     Ran 18 tests in 0.005s
+     Ran 18 tests in 0.001s
      OK
